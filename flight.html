@@ -11,7 +11,7 @@
 <body>
     <nav>
         <div id="header-container">
-            <h1 id="logo">Logo</h1>
+            <h1 id="logo"><span>Alpha</span> Airline</h1>
             <div class="menu-container">
                 <ul id="menu">
                     <li class="menu-item"><a class="active" href="#">Home</a></li>
@@ -23,35 +23,86 @@
             </div>
         </div>
     </nav>
+    <!-- Hero Section-->
     <div id="hero">
         <div class="hero-overlay"></div>
         <div id="hero-text-container">
             <div id="hero-text">
                 <h2>
-                    Save up to <span> 64%</span> on International businesses and first class tickets
+                    Save up to <span id="percentage"> 64%</span> on International businesses and first class tickets
                 </h2>
+
                 <p>
                     Yes, seriously! Basis unlocks exclusive access to private fares you won't find on Expedia or
                     Hotwire
-                </h6>
+                </p>
             </div>
         </div>
 
     </div>
-    <!-- <P >
-        <label>Select Destination:</label>
-        <select>
-            <option value="">Abuja Airport</option>
-            <option value="">Abakaliki Airport</option>
-            <option value="">Kano Airport</option>
-            <option value="">Lagos Airport</option>
-            <option value="">Porthacort Airport</option>
-        </select>    
-        <label>Depature Date:</label><input type="date" id="date">
-        <label>Return Date:</label><input type="date" id="date"></br>
-        
-           
-    </P> -->
+    <!--- Booking Plugin -->
+    <div id="booking-plugin-container">
+        <div id="booking-plugin">
+            <div id="passsenger-info">
+                <div id="info-tab">
+                    <select name="no_passenger" id="no_passenger">
+                        <option value="1">1 Passsenger</option>
+                    </select>
+                    <div class="divider"></div>
+                    <select name="trip" id="trip">
+                        <option value="1">Round Trip</option>
+                    </select>
+                    <div class="divider"></div>
+                    <select name="type" id="type">
+                        <option value="1">Business & class</option>
+                    </select>
+                </div>
+            </div>
+            <div id="search-bar">
+                <div id="details-container">
+                    <!-- Destination Inputs-->
+                    <div id="destination-container">
+                        <div class="form-control">
+                            <label for="from_destination">From*</label>
+                            <select name="from_destination" id="from_destination">
+                                <option value="">Select Departure</option>
+                                <option value="enugu">Enugu State</option>
+                                <option value="imo">Imo State</option>
+                            </select>
+                        </div>
+                        <div class="form-control">
+                            <label for="to_destination">To*</label>
+                            <select name="to_destination" id="to_destination">
+                                <option value="">Select Arrival</option>
+                                <option value="enugu">Enugu State</option>
+                                <option value="imo">Imo State</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <!-- Flight Date Inputs-->
+                    <div id="date-container">
+                        <div class="form-control">
+                            <label for="departure-date">Departure Date</label>
+                            <input type="date" id="departure-date" name="departure-date">
+                        </div>
+                        <div  class="form-control">
+                            <label for="arrival-date">Arrival Date</label>
+                            <input type="date" id="arrival-date" name="arrival-date">
+                        </div>
+
+                    </div>
+
+                </div>
+                <button>search</button>
+            </div>
+            <p>* Up to 44% off business class and 31% off economy fares. Available to both individuals and travel agents
+            </p>
+        </div>
+
+    </div>
+
 
 </body>
 

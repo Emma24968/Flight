@@ -1,125 +1,214 @@
-    *,
-    body {
-        margin: 0;
-        padding: 0;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@200..800&display=swap');
+*,
+body {
+    margin: 0;
+    padding: 0;
+}
 
-    body {
-        min-height: 100vh;
-    }
+body {
+    min-height: 100vh;
+    font-family: "Manrope", sans-serif;
+    background-color: rgb(245, 245, 245);
 
+}
 
-    #hero {
-        background-image: url(plane.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        min-height: 70vh;
-    }
+select, input {
+    font-family: "Manrope", sans-serif;
+}
 
-    .hero-overlay {
-        width: 100%;
-        min-height: 70vh;
-        background: linear-gradient(to right, #00104686, transparent);
-        position: absolute;
-        z-index: 40;
-    }
-
-    #hero-text-container {
-        max-width: 80rem;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 50px;
-        display: flex;
-        align-items: center;
-        z-index: 50;
-    }
-
-    #hero-text{
-        width: 40%;
-        z-index: 50;
-    }
-
-    #hero-text > h2 {
-        font-size: 44px;
-        color: white;
-        margin-bottom: 10px;
-    }
-
-    #hero-text > p {
-        font-size: 18px;
-        color: white;
-    }
-
-    nav {
-        background-color: #ECFFFB;
-
-    }
-
-    #header-container {
-        max-width: 80rem;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    #logo {
-        max-width: 20%;
-    }
-
-    .menu-container {
-        width: 35%;
-        display: flex;
-        align-items: center;
-    }
-
-    #menu {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex: 1;
- 
-    }
-
-    .button {
-        margin-left: 25px;
-        background-color: #1F4FEC;
-        color: white;
-        padding: 15px 20px 15px 20px;
-        border-radius: 5px;
-        border: none;
-    }
-
-    .menu-item>a {
-        color: black;
-    }
-
-    .active {
-        background-color: #fff;
-    }
+button {
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
 
 
+#hero {
+    background-image: url(plane.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 70vh;
+}
 
-    a:hover {
-        background-color: #b63131;
-    }
+.hero-overlay {
+    width: 100%;
+    min-height: 70vh;
+    background: linear-gradient(to right, #00104686, transparent);
+    position: absolute;
+    z-index: 40;
+}
+
+#hero-text-container {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    z-index: 50;
+}
+
+#hero-text {
+    width: 50%;
+    z-index: 50;
+    
+}
+
+#hero-text>p {
+    line-height: 1.5;
+}
+
+#hero-text>h2 {
+    font-size: 44px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#hero-text>p {
+    font-size: 18px;
+    color: white;
+}
+
+nav {
+    background-color: #ECFFFB;
+
+}
+
+#header-container {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#logo {
+    max-width: 20%;
+    font-family: "DM Serif Display", serif; 
+    text-transform: uppercase;
+    color: #050a33;   
+}
+
+#logo>span{
+    background-color: #ac0202;
+    color: white;
+    padding: 0px 10px 0px 10px;
+    border-radius: 10px 0px 10px 0px;
+}
+
+.menu-container {
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+#menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+
+
+}
+
+.button {
+    margin-left: 25px;
+    background-color: #1F4FEC;
+    color: white;
+    padding: 15px 20px 15px 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.menu-item>a {
+    color: black;
+}
+
+.active {
+    background-color: #fff;
+}
 
 
 
-    span {
-        border: 1px solid green;
-    }
-
-    a {
-        text-decoration: none;
-    }
+a:hover {
+    background-color: #b63131;
+}
 
 
 
+#percentage {
+    border: 3px solid rgb(79, 209, 79);
+    padding: 0px 10px 0px 10px;
+    background-color: rgba(129, 211, 129, 0.2);
+
+}
+
+a {
+    text-decoration: none;
+}
+
+
+#booking-plugin-container{
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -90px;
+    z-index: 60;
+    position: relative;
+    padding-bottom: 80px;
+    
+}
+#booking-plugin {
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+}
+
+#destination-container, #date-container{
+    display: flex;
+
+
+}
+
+#details-container {
+    display: flex;
+}
+
+#search-bar {
+    display: flex;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.divider {
+    width: 2px;
+    height: 15px;
+    background-color: #dbdbdb;
+    margin: 0 10px;
+}
+
+#passsenger-info{
+    margin-bottom: 20px;
+}
+
+#info-tab {
+    display: flex;
+    align-items: center;
+}
+
+#info-tab > select {
+    border:  none;
+    color: gray;
+}
